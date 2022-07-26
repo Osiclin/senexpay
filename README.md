@@ -1,5 +1,7 @@
 # senexpay
 
+This is project is built with Nuxtjs
+
 ## Build Setup
 
 ```bash
