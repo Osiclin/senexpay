@@ -1,6 +1,6 @@
 <template>
   <div>
-    SenexPay
+    <h2>SenexPay</h2>
   </div>
 </template>
 
