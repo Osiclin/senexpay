@@ -1,14 +1,16 @@
 <template>
   <div class="container">
     <Logo/>
-    <nav class="menu">
-        <nuxt-link class="link" v-for="(item, index) in menu" :key="index" :to="item">{{ item }}</nuxt-link>
-    </nav>
-    <div class="right">
-        <next-link class="link" to="/login">Log in</next-link>
-        <Button bgcolor="#1265FB" color="#ffffff" radius="4px">Get Started</Button>
-        <IconNigeriaFlag/>
-        <IconFlagDropdown/>
+    <div class="menuWrapper">
+        <nav class="menu">
+            <nuxt-link class="link" v-for="(item, index) in menu" :key="index" :to="item">{{ item }}</nuxt-link>
+        </nav>
+        <div class="right">
+            <nuxt-link class="link" to="/login">Log in</nuxt-link>
+            <Button bgcolor="#1265FB" color="#ffffff" radius="4px">Get Started</Button>
+            <IconNigeriaFlag/>
+            <IconFlagDropdown/>
+        </div>
     </div>
   </div>
 </template>
@@ -36,12 +38,14 @@ export default {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem;
-    max-width: 1400px;
+    padding: 1rem 2rem;
+    width: 100%;
     margin: 0 auto;
+    position: fixed;
+    z-index: 4;
 }
 .link{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-right: 2rem;
     text-decoration: none;
     letter-spacing: 0px;
@@ -51,6 +55,13 @@ export default {
 .right{
     display: flex;
     align-items: center;
+}
+.menuWrapper{
+    display: flex;
+    align-items: center;
+}
+.menu{
+    margin-right: 6rem;
 }
 @media screen and (max-width: 1000px) {
     .menu{

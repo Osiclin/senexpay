@@ -2,19 +2,22 @@
   <div>
     <Hero/>
     <Transactions/>
+    <Trust/>
   </div>
 </template>
 
 <script>
 import Transactions from '../components/Transaction/Transactions.vue'
 import Hero from '../components/Hero.vue'
+import Trust from '../components/Trust/Trust.vue'
 
 export default {
   name: 'IndexPage',
-  components: { 
+  components: {
     Transactions,
-    Hero
-  }
+    Hero,
+    Trust
+}
 }
 </script>
 
@@ -45,7 +48,7 @@ body{
   box-sizing: border-box;
 }
 h1,h2,h3{
-  line-height: 5.5rem;
+  line-height: 1.2;
   margin: 0;
 }
 @media screen and (max-width: 1400px) {
@@ -54,8 +57,8 @@ h1,h2,h3{
   }
 }
 @media screen and (max-width: 600px) {
-  html{
-    font-size: .6rem;
+  html, body{
+    font-size: .7rem;
   }
 }
 </style>

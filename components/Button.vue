@@ -14,7 +14,7 @@ export default {
 <style scoped>
 .button{
     border: 0;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-right: .5rem;
     padding: .8rem 2rem;
     display: flex;

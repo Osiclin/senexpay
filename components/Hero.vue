@@ -21,8 +21,12 @@
           <img src="../static/images/App_home_screen.png" width="100%" height="100%" alt="app" />
         </div>
         <div class="imgWidgetDiv">
-          <img src="../static/images/dashboard_widget1.png" width="100%" height="209px" alt="widget" style="margin-bottom: 2rem" />
-          <img src="../static/images/dashboard_widget2.png" width="100%" height="209px" alt="widget" />
+          <div class="stat">
+            <img src="../static/images/dashboard_widget1.png" width="100%" height="100%" alt="widget" />
+          </div>
+          <div class="stat">
+            <img src="../static/images/dashboard_widget2.png" width="100%" height="100%" alt="widget" />
+          </div>
           <div class="baseDiv">
             <IconEasy/>
             <IconSwift/>
@@ -50,33 +54,35 @@ export default {
 
 <style scoped>
 .container{
+  width: 100%;
   background: #041D45;
 }
 .hero{
-  min-height: 680px;
-  padding: 3rem 1rem 1rem;
+  min-height: 100vh;
+  padding: 10rem 2rem 3rem;
   display: flex;
   max-width: 1400px;
   margin: 0 auto;
 }
 .heroText{
   font-family: SF Pro Bold;
-  font-size: 5rem;
+  font-size: 4.7rem;
 }
 .hero>div:first-child{
   max-width: 750px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-right: 2rem;
 }
 .hero>div:last-child{
   display: flex;
-  height: 602px;
+  max-height: 530px;
   flex-shrink: 0;
 }
 .hero>div:first-child>p{
   max-width: 700px;
-  font-size: 1.875rem;
+  font-size: 1.575rem;
 }
 .focus{
   background: transparent linear-gradient(109deg, #1265FB 0%, #00FFFF 100%) 0% 0% no-repeat padding-box;
@@ -87,11 +93,11 @@ export default {
 .imgAppDiv{
   max-width: 359px;
   height: 100%;
+  margin-right: 2rem;
 }
 .imgWidgetDiv{
   width: 300px;
   height: 100%;
-  margin-top: 1.9rem;
 }
 .storeDiv{
   display: flex;
@@ -103,28 +109,35 @@ export default {
   display: flex;
   align-items: center;
 }
-.baseDiv>svg{
-  margin-top: 2rem;
-}
 .baseDiv>svg:first-child{
   margin-right: 1rem;
 }
+.stat{
+  height: 209px;
+  margin-bottom: 2rem;
+}
 
-@media screen and (max-width: 1040px) {
+@media screen and (max-width: 1100px) {
   .hero{
     flex-wrap: wrap;
   }
   .hero>div:first-child{
-    max-width: 100%;
-    margin-top: 4rem;
+    max-width: 800px;
+    margin: 2rem auto 3rem;
     text-align: center;
     align-items: center;
+  }
+  .hero>div:first-child>p{
+    max-width: 600px;
   }
   .hero>div:last-child{
     width: 100%;
     justify-content: center;
     flex-shrink: unset;
-    margin-top: 3rem;
+    margin-top: 0;
+  }
+  .stat{
+    height: auto;
   }
 }
 

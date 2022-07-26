@@ -27,12 +27,12 @@ export default {
 <style scoped>
 .container{
     background-color: #042B69;
-    padding: 5rem 1rem;
+    padding: 5rem 2rem;
 }
 .container>p{
     margin: 3rem 0 0;
     text-align: center;
-    font-size: 1.875rem;
+    font-size: 1.575rem;
 }
 .learn{
     color: #5694FC;

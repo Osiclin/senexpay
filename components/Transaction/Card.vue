@@ -62,11 +62,11 @@ export default {
 }
 .amount{
     margin-right: 1rem;
-    font-size: 1.875rem;
+    font-size: 1.575rem;
     font-family: SF Pro Bold;
 }
 .para{
-    font-size: 1.875rem;
+    font-size: 1.575rem;
 }
 @media screen and (max-width: 900px) {
     .card>div:last-child{
